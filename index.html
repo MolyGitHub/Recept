@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pannkakor</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            /*box-sizing: border-box;*/
+            font-size: 100%;
+        }
+
+        body {
+            background-color: rgb(250, 250, 250);
+            font-family: 'Open sans';
+            font-size:16px;
+            font-weight: 400px;
+            color: #000000;
+            /*line-height 1.2;*/
+            background-color: rgba(161, 0, 0, 0.3);
+        }
+
+        .container {
+            /* min-height: 100%;
+           min-height: 100vh;*/
+            display: flex;
+            justify-content: center;
+            /* Centrerar horisontellt */
+
+        }
+
+        article {
+            background-color: rgba(253, 251, 251);
+            width: 75%;
+            max-width: 1280;
+        }
+
+         .recipe-header-image {
+           width:100%;
+           height: 500px;
+            /*
+             object-fit: cover;
+            width: 100%;
+            max-width: 1250px;
+            max-width: 100%;
+             height: auto;
+            */
+            border: #FCFCFC 1px solid;
+        }
+
+        .recipe-content {
+            padding: 30px;
+        }
+
+        #headline,
+        ingress {
+            margin-bottom: 16px;
+        }
+
+        #headline {
+            font-weight: 700px;
+            font-size: 28px;
+            color: #A10000;
+            font-style: bold;
+            height: 38px;
+        }
+
+        #ingress {
+            /*font-size: 0.8rem;*/
+            font-size: 16px;
+            font-weight: 400;
+            background-color: #EBEBEB;
+            padding: 22px 22px;
+        }
+
+
+        .ingredients {
+            margin-top: 15px;
+            /*    border: red 1px solid;*/
+        }
+
+
+        .portions {
+            margin: 12px 0px 0px 5px;
+            font-weight: 400;
+            font-size: 16px;
+        }
+
+        .ingredients-list {
+            /*display: flex;   
+            flex-direction: column;*/
+            padding: 8px;
+            list-style: none;
+        }
+
+        .ingredients-list li {
+            /*position: realtive;*/
+            padding-left: 10px;
+            font-size: 1rem;
+        }
+
+        .ingredients-list li::before {
+            content: "+";
+            margin-right: 8px;
+            margin-left: 1px;
+        }
+
+        li {
+            /*   position: realtive;margin-bottom: 1px;*/
+            line-height: 1.6;
+        }
+
+     /*   li ::before {}*/
+
+
+        .description {
+            margin-top: 10px;
+            margin-botton: 16px;
+        }
+
+
+        .description-list {
+            padding-left:2px;
+            margin-top: 10px;
+        }
+
+        ol {
+            margin-left: 22px;
+            line-height: 1.6;
+        }
+
+        .side-dish {
+            margin-top: 20px;
+            width: 100%;
+        }
+
+
+        .side-dish-gallery {
+            gap: 24px;
+            margin-top: 20px;
+            display: flex;
+            width: 100%;
+            flex-direction: row;
+        }
+
+
+        .side-dish-gallery-item {
+            flex: 1;
+        }
+
+        .side-dish-gallery-item img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            display: block;
+        }
+
+        h1 {
+            /* font-size: 1.7rem;*/
+            font-size: 24px;
+            font-weight: 700;
+        }
+
+        h2 {
+            font-size: 24px;
+            font-weight: 700;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <article>
+            <header id="image-container">
+                <img class="recipe-header-image" src="img/pannkakor4.jpeg" alt="Pancakes and blueberries on a plate">
+            </header>
+
+
+            <div class="recipe-content">
+
+                <div id="headline">
+                    <h1>Enkelt recept på pannkakor</h1>
+                </div>
+
+                <div id="ingress">
+                    <h3>
+                        Gör traditionella tunna pannkakor med detta enkla och goda pannkaksrecept.</h3>
+                </div>
+
+                <section class="ingredients">
+                    <h1> Ingredienser </h1>
+                    <p class="portions">För 4 personer</p>
+
+                    <ul class="ingredients-list">
+                        <li>2 1/2 dl vetemjöl</li>
+                        <li>1/2 tsk salt</li>
+                        <li>6 dl mjölk</li>
+                        <li>3 ägg</li>
+                        <li>smör(till stekning)</li>
+                        <li>sylt, bär eller frukt till servering</li>
+                    </ul>
+                </section>
+
+
+                <section class="description">
+                    <h2>Så här gör du</h2>
+                    <ol class="description-list">
+                        <li>Blanda mjöl och salt i en bunke.</li>
+
+                        <li>Vispa i hälften av mjölken och vispa till en slät smet.</li>
+                        <li>Vispa i resten av mjölken och äggen.</li>
+                        <li>Låt smeten vila ca 10 miuter</li>
+                        <li>Stek tunna pannkakor i lite smör, för varje pannkaka, i en stek- eller
+                            pankakspanna.</li>
+                        <li>Servera med sylt, bär eller frukt</li>
+                    </ol>
+                </section>
+
+                <section class="side-dish">
+                    <h2>Serveringsförslag</h2>
+                    <div class="side-dish-gallery">
+                        <div class="side-dish-gallery-item">
+                            <img src="img/pannkakor2.jpeg" alt="Pancakes on a plate">
+                        </div>
+                        <div class="side-dish-gallery-item">
+                            <img src="img/pannkakor3.jpeg" alt="=Pancake on a plate with blueberries">
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+        </article>
+    </div>
+</body>
+
+</html>
