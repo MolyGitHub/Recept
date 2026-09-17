@@ -14,16 +14,16 @@
             padding: 0;
             border: 0;
             box-sizing: border-box;
-               /* Gör att px-mått för bredd/höjd inkluderar padding och borders */
+            /* Gör att px-mått för bredd/höjd inkluderar padding och borders */
         }
 
         body {
-            background-color: rgba(161, 0, 0, 0.3); 
-            font-family: 'Open Sans','sans-serif';
+            background-color: rgba(161, 0, 0, 0.3);
+            font-family: 'Open Sans', 'sans-serif';
             font-size: 16px;
             font-weight: 400;
             color: #000000;
-    
+
         }
 
         .container {
@@ -43,7 +43,8 @@
             width: 100%;
             height: 500px;
             object-fit: cover;
-            display:block;  /* Tar bort dolda små marginaler under bilder */
+            display: block;
+            /* Tar bort dolda små marginaler under bilder */
             /*
              object-fit: cover;
             width: 100%;
@@ -66,15 +67,15 @@
             font-size: 28px;
             color: #A10000;
             font-style: bold;
-          /*  height: 38px;*/
+            /*  height: 38px;*/
         }
 
         #ingress {
             /*font-size: 0.8rem;*/
             font-size: 16px;
-           /*font-weight: 400;*/
+            /*font-weight: 400;*/
             background-color: #EBEBEB;
-            padding: 22px ;
+            padding: 22px;
         }
 
 
@@ -86,7 +87,7 @@
 
         .portions {
             margin: 12px 0px 0px 5px;
-       /*     font-weight: 400;*/
+            /*     font-weight: 400;*/
             font-size: 16px;
         }
 
@@ -169,6 +170,37 @@
             font-size: 24px;
             font-weight: 700;
         }
+
+        @media (max-width: 768px) {
+            .recipe-header-image {
+                height: 300px;
+            }
+
+            .side-dish-gallery {
+                flex-direction: column;
+            }
+
+            .side-dish-gallery-item img {
+                height: 200px;
+            }
+
+            /* Göm den stora HTML-bilden (pancakeL) */
+            .recipe-header-image {
+                display: none;
+            }
+
+            /* Visa den lilla bilden (pancakeS) som bakgrund på containern istället */
+            #image-container {
+                background-image: url('img/pancakeS.png');
+                /* Kontrollera att sökvägen stämmer */
+                background-size: cover;
+                /* Fyller ut hela rutan */
+                background-position: center;
+                /* Centrerar bilden */
+                width: 100%;
+                height: 300px;
+            }
+        }
     </style>
 </head>
 
@@ -176,7 +208,7 @@
     <div class="container">
         <article>
             <header id="image-container">
-                <img class="recipe-header-image" src="img/pannkakor4.jpeg" alt="Pancakes with blueberries on a plate">
+                <img class="recipe-header-image" src="img/pancakeL.png" alt="Pancakes with raspberries on a plate">
             </header>
 
 
